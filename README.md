@@ -1,10 +1,18 @@
 # dotfiles
 
 ## Path
+### Tmux
 - tmux.conf:`~/.tmux.conf`
+### matplotlib
 - matplotlibrc:`~/.config/matplotlib/matplotlibrc`
-- vimrc:`~/.vimrc`
+### vim
+
+    ln -s vim ~/.vim
+    ln -s ~/.vim/vimrc ~/.vimrc
+
 syntax file:asy.vim ==> more info can be found in the asymptote manual.
-colorscheme requirement:
+colorscheme:
+### Asymptote
 - config.asy:`/usr/local/texlive/2015/texmf-dist/asymptote/config.asy`
+### offlineimap
 - offlineimaprc:`~/.offlineimaprc`

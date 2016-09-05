@@ -1,0 +1,27 @@
+" 自己乱找来的配置
+set nu
+set cursorline
+set cindent
+set ruler
+colorscheme tomorrow-night
+set t_Co=256
+"set guifont=Monospace:h11
+
+" 使得asy语法配置asy.vim生效
+augroup filetypedetect
+au BufNewFile,BufRead *.asy    setf asy
+augroup END
+filetype plugin on
+
+" 这两句根本没用啊
+"autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+"autocmd FileType html set omnifunc=htmlcomplete#ComleteHTML
+
+"filetype plugin indent on " 为了自动补全，打开文件类型检测.之前已经设过了
+let autosave=5 "5s自定保存一次，我不知道为什么是用let而不是set.为啥没效果？
+set fileencoding=utf-8 "和encoding=utf-8有啥不一样？
+
+"去掉有关vi一致性模式，避免以前版本的一些bug和局限
+set nocompatible
+"backspace默认是vi兼容的，所以需要设置一下
+set backspace=indent,eol,start
