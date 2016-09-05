@@ -25,3 +25,4 @@ set fileencoding=utf-8 "和encoding=utf-8有啥不一样？
 set nocompatible
 "backspace默认是vi兼容的，所以需要设置一下
 set backspace=indent,eol,start
+set clipboard=unnamed
