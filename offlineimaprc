@@ -18,4 +18,9 @@ remotepass = googlesaigo
 ssl = yes
 maxconnections = 1
 realdelete = no
+<<<<<<< HEAD
 cert_fingerprint = 3387e155264c4ce5466636f721be40707523924f
+=======
+cert_fingerprint = 
+
+>>>>>>> 15290e3f9d1ce978d90a0d578258010564002d79

@@ -1,6 +1,7 @@
 " 自己乱找来的配置
 set nu
 set cursorline
+<<<<<<< HEAD
 set noai
 colorscheme tomorrow-night
 set t_Co=256
@@ -19,6 +20,19 @@ set autoindent
 "au BufNewFile,BufRead *.asy    setf asy
 "augroup END
 "filetype plugin on
+=======
+set cindent
+set ruler
+colorscheme tomorrow-night
+set t_Co=256
+"set guifont=Monospace:h11
+
+" 使得asy语法配置asy.vim生效
+augroup filetypedetect
+au BufNewFile,BufRead *.asy    setf asy
+augroup END
+filetype plugin on
+>>>>>>> 15290e3f9d1ce978d90a0d578258010564002d79
 
 " 这两句根本没用啊
 "autocmd FileType css set omnifunc=csscomplete#CompleteCSS
@@ -32,5 +46,8 @@ set fileencoding=utf-8 "和encoding=utf-8有啥不一样？
 set nocompatible
 "backspace默认是vi兼容的，所以需要设置一下
 set backspace=indent,eol,start
+<<<<<<< HEAD
 set runtimepath+=~/.vim
+=======
+>>>>>>> 15290e3f9d1ce978d90a0d578258010564002d79
 set clipboard=unnamed
