@@ -2,6 +2,9 @@
 
 c = get_config()
 
+
+c.Console.font_size = 12
+c.Console.font_family = 'Monaco'
 #------------------------------------------------------------------------------
 # InteractiveShellApp configuration
 #------------------------------------------------------------------------------
@@ -177,7 +180,6 @@ c = get_config()
 #------------------------------------------------------------------------------
 # TerminalInteractiveShell configuration
 #------------------------------------------------------------------------------
-
 # TerminalInteractiveShell will inherit config from: InteractiveShell
 
 # 
@@ -271,18 +273,18 @@ c = get_config()
 # c.TerminalInteractiveShell.autocall = 0
 
 # Autoindent IPython code entered interactively.
-# c.TerminalInteractiveShell.autoindent = True
+c.TerminalInteractiveShell.autoindent = True
 
 # Set the color scheme (NoColor, Linux, or LightBG).
-# c.TerminalInteractiveShell.colors = 'LightBG'
+c.TerminalInteractiveShell.colors = 'LightBG'
 
 # Set the editor used by IPython (default to $EDITOR/vi/notepad).
-# c.TerminalInteractiveShell.editor = 'mate -w'
+c.TerminalInteractiveShell.editor = 'vim'
 
 # Use colors for displaying information about objects. Because this information
 # is passed through a pager (like 'less'), and some pagers get confused with
 # color codes, this capability can be turned off.
-# c.TerminalInteractiveShell.color_info = True
+c.TerminalInteractiveShell.color_info = True
 
 # 
 # c.TerminalInteractiveShell.readline_parse_and_bind = ['tab: complete', '"\\C-l": clear-screen', 'set show-all-if-ambiguous on', '"\\C-o": tab-insert', '"\\C-r": reverse-search-history', '"\\C-s": forward-search-history', '"\\C-p": history-search-backward', '"\\C-n": history-search-forward', '"\\e[A": history-search-backward', '"\\e[B": history-search-forward', '"\\C-k": kill-line', '"\\C-u": unix-line-discard']
